@@ -1,0 +1,29 @@
+#posts .post {
+  margin: 1px 0;
+  padding: 5px;
+  border: 1px solid #ccc;
+  font-family: sans-serif, "Helvetica Neue", "Lucida Grande", Arial;
+  font-stretch: condensed;
+}
+
+#posts .post .content {
+  font-size: 14px; /* Adjust to your preference */
+  line-height: 1.2; /* Adjust to your preference */
+  
+}
+
+body{
+font-family: sans-serif, "Helvetica Neue", "Lucida Grande", Arial;
+font-stretch: condensed; 
+max-width: 90%
+}
+
+.column {
+  width: 50%;
+  float: left;
+}
+ 
+ 
+.shaded {
+  background-color: #f5f5f5; /* Light gray color */
+}
