@@ -50,7 +50,10 @@ const fetchDataAndDisplay = () => {
   // Clear previous data
   document.getElementById('posts').innerHTML = '';
 
+  // The querykeys array below holds the hashtags you'lll be monitoring. You can have an unlimited number but the more you have the longer the feed will take to generate and it might change too fast.  
+  // Make sure to put single quotes around any new hashtags you add, and separate them with commas.  
   const querykeys = ['foss', 'opensource','mastodon'];
+  // The domains array holds the Mastodon instances you'll be monitoring. I find these work well but you can change them if you wish.
   const domains = ['mastodon.social', 'mstdn.social','mastodon.world','techhub.social'];
   const corsProxyUrl = 'https://corsproxy.io/?';
 
@@ -138,7 +141,7 @@ const fetchDataAndDisplay = () => {
 // Call the function immediately to fetch and display data
 fetchDataAndDisplay();
 
-// Schedule the function to run every 90 seconds
+// Schedule the function to run every 90 seconds (expressed in milliseconds.) You can change this if you wish. 
 setInterval(fetchDataAndDisplay, 90000);
 
 </script>
